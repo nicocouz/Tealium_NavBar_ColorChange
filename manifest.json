@@ -1,0 +1,19 @@
+{
+    "name": "BackGround Color Tealium",
+    "description": "Change BackGround Color when you are on Caisse D'Epargne",
+    "version": "2.1",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
