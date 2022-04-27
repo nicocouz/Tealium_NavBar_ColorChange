@@ -1,7 +1,7 @@
 # Tealium_NavBar_ColorChange
-Modify navbar background color for a specific profil
+** Goal** : Modify navbar background color for a specific profil
 
-Creation of a Chrome extension and use of [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) constructor to listen to the DOM changes 
+_Creation of a Chrome extension and use of [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) constructor to listen to the DOM changes _
 
 **Before** : 
 
