@@ -1,4 +1,4 @@
-
+// Definition of mutationObserver constructor
 const mutationObserver = new MutationObserver(entries => {
 // Get the innerHTML element that will be modify during your DOM modification
     var navbarinnerHTML = document.querySelector("#profile_legend_account").innerHTML
@@ -30,12 +30,14 @@ window.addEventListener("load", function () {
                 document.querySelector("#mainHeader > div").style.background = ""
             )
             const childNavbar = document.querySelector("#profile_menu_button > div.productProfile_body")
+            // Use of mutationObserver constructor
             mutationObserver.observe(childNavbar, { childList: true, subtree: true })
         }, 4500);
     } else {
         // FOR CLIENTSIDE
 
         const childNavbar = document.querySelector("#profile_menu_button > div.productProfile_body")
+                    // Use of mutationObserver constructor
         mutationObserver.observe(childNavbar, { childList: true, subtree: true })
     }
 });
